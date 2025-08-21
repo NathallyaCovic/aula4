@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f8ff; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(200, 50, 100); 
+}
+
+h2 {
+    text-align: left;
+    color: darkgreen;
+}
+p.justificado {
+    text-align: justify;
+    color: #4444cc; 
+    font-size: 16px;
+}
+p.direita {
+    text-align: right;
+    color: #b22222; 
+    font-size: 20px;
+}
