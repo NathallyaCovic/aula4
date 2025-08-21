@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de Viagem - Interno</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.5;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #0077b6;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    legend {
+      font-weight: bold;
+      color: #023e8a;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 14px;
+    }
+    button[type="submit"] {
+      padding: 12px 20px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button[type="reset"] {
+      padding: 12px 20px;
+      background-color: #ccc;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p>Preencha o formulário para solicitar sua próxima viagem.</p>
+</header>
+
+<main>
+   <form action="#" method="post">
+
+      <!-- Dados pessoais -->
+      <section id="dados-pessoais">
+        <h2>Dados pessoais</h2>
+        <fieldset>
+          <legend>Contato</legend>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="exemple@email.com">
+
+          <label for="telefone">Telefone (WhatsApp)</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </fieldset>
+      </section>
+
+      <!-- Detalhes da viagem -->
+      <section id="detalhes-viagem">
+        <h2>Detalhes da viagem</h2>
+        <fieldset>
+          <legend>Destino e datas</legend>
+          <label for="origem">Cidade de origem</label>
+          <input type="text" id="origem" name="origem" placeholder="Ex.: São Paulo">
+
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" name="destino" placeholder="Ex.: Recife">
+
+          <label for="ida">Data de ida</label>
+          <input type="date" id="ida" name="ida">
+
+          <label for="volta">Data de volta</label>
+          <input type="date" id="volta" name="volta">
+        </fieldset>
+      </section>
+
+      <!-- Botões -->
+      <button type="submit">Enviar solicitação</button>
+      <button type="reset">Limpar formulário</button>
+
+    </form>
+</main>
+
+<footer>
+  <p>Formulário de Solicitação de Viagem.</p>
+</footer>
+
+</body>
+</html>
+

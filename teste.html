@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EuVouNaTrip — Solicitação de Viagem</title>
+</head>
+<body>
+  <header>
+    <link rel="stylesheet" href="style.css">
+    <p>Preencha o formulário para solicitar sua próxima viagem.</p>
+  </header>
+  <main>
+    <form action="#" method="post">
+      <section id="dados-pessoais">
+        <h2>Dados pessoais</h2>
+        <fieldset>
+          <legend>Contato</legend>
+          <label for="nome">Nome completo</label><br />
+          <input type="text" id="nome" name="nome" placeholder="Seu nome"  /><br /><br />
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" name="email" placeholder="exemple@email.com"  /><br /><br />
+          <label for="telefone">Telefone (WhatsApp)</label><br />
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" <br /><br />
+        </fieldset>
+      </section>
+      <section id="detalhes-viagem">
+        <h2>Detalhes da viagem</h2>
+        <fieldset>
+          <legend>Destino e datas</legend>
+          <label for="origem">Cidade de origem</label><br />
+          <input type="text" id="origem" name="origem" placeholder="Ex.: São Paulo"  /><br /><br />
+          <label for="destino">Destino</label><br />
+          <input type="text" id="destino" name="destino" placeholder="Ex.: Recife"  /><br /><br />
+          <label for="ida">Data de ida</label><br />
+          <input type="date" id="ida" name="ida"  /><br /><br />
+          <label for="volta">Data de volta</label><br />
+          <input type="date" id="volta" name="volta" /><br /><br />
+        </fieldset>
+      </section>
+      <section id="preferencias">
+        <h2>Preferências</h2>
+        <fieldset>
+          <legend>Transporte</legend>
+          <label for="partida-flexivel">Flexibilidade de datas</label><br />
+          <select id="partida-flexivel" name="partida_flexivel">
+            <option value="nao">Sem flexibilidade</option>
+            <option value="+-1">± 1 dia</option>
+            <option value="+-3">± 3 dias</option>
+            <option value="+-7">± 7 dias</option>
+          </select>
+          <br /><br />
+          <label for="classe">Classe (voo/ônibus)</label><br />
+          <select id="classe" name="classe">
+            <option value="economica" selected>Econômica</option>
+            <option value="economica-plus">Econômica Plus</option>
+            <option value="executiva">Executiva</option>
+            <option value="primeira">Primeira</option>
+          </select>
+          <br /><br />
+          <input type="checkbox" id="bagagem" name="bagagem" value="sim" />
+          <label for="bagagem">Incluir bagagem despachada</label><br />
+          <input type="checkbox" id="assento" name="assento" value="corredor" />
+          <label for="assento">Prefiro assento no corredor</label><br />
+          <input type="checkbox" id="direto" name="direto" value="sim" />
+          <label for="direto">Somente voos diretos</label>
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Hospedagem</legend>
+          <label for="tipo-hospedagem">Tipo</label><br />
+          <select id="tipo-hospedagem" name="tipo_hospedagem">
+            <option value="hotel" selected>Hotel</option>
+            <option value="hostel">Hostel</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="resort">Resort</option>
+            <option value="sem">Sem hospedagem</option>
+          </select>
+          <br /><br />
+          <label for="estrelas">Categoria mínima</label><br />
+          <select id="estrelas" name="estrelas">
+            <option value="1">1 estrela</option>
+            <option value="2">2 estrelas</option>
+            <option value="3" selected>3 estrelas</option>
+            <option value="4">4 estrelas</option>
+            <option value="5">5 estrelas</option>
+          </select>
+          <br /><br />
+          <input type="checkbox" id="cafe" name="cafe" value="sim" />
+          <label for="cafe">Café da manhã incluso</label><br />
+          <input type="checkbox" id="cancelamento" name="cancelamento" value="gratis" />
+          <label for="cancelamento">Cancelamento gratuito</label>
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Orçamento</legend>
+          <label for="orcamento">Orçamento total estimado (R$)</label><br />
+          <input type="number" id="orcamento" name="orcamento" min="0" step="100" placeholder="Ex.: 3000" />
+          <br /><br />
+          <label for="prioridade">Prioridade</label><br />
+          <select id="prioridade" name="prioridade">
+            <option value="preco" selected>Preço mais baixo</option>
+            <option value="conforto">Conforto</option>
+            <option value="localizacao">Localização</option>
+            <option value="rapidez">Rapidez</option>
+          </select>
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Observações</legend>
+          <label for="observacoes">Conte mais sobre sua viagem</label><br />
+          <textarea id="observacoes" name="observacoes" placeholder="Ex.: comemoração de aniversário, restrições alimentares, horários preferidos..."></textarea>
+        </fieldset>
+      </section>
+          <button type="submit">Enviar solicitação</button>
+          <button type="reset">Limpar formulário</button>
+      </section>
+    </form>
+  </main>
+  <footer>
+    <p>Formulário de Solicitação de Viagem.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de Viagem - Externo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p>Preencha o formulário para solicitar sua próxima viagem.</p>
+</header>
+
+<main>
+     <form action="#" method="post">
+
+      <!-- Dados pessoais -->
+      <section id="dados-pessoais">
+        <h2>Dados pessoais</h2>
+        <fieldset>
+          <legend>Contato</legend>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="exemple@email.com">
+
+          <label for="telefone">Telefone (WhatsApp)</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </fieldset>
+      </section>
+
+      <!-- Detalhes da viagem -->
+      <section id="detalhes-viagem">
+        <h2>Detalhes da viagem</h2>
+        <fieldset>
+          <legend>Destino e datas</legend>
+          <label for="origem">Cidade de origem</label>
+          <input type="text" id="origem" name="origem" placeholder="Ex.: São Paulo">
+
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" name="destino" placeholder="Ex.: Recife">
+
+          <label for="ida">Data de ida</label>
+          <input type="date" id="ida" name="ida">
+
+          <label for="volta">Data de volta</label>
+          <input type="date" id="volta" name="volta">
+        </fieldset>
+      </section>
+
+      <!-- Botões -->
+      <button type="submit">Enviar solicitação</button>
+      <button type="reset">Limpar formulário</button>
+
+    </form>
+</main>
+
+<footer>
+  <p>Formulário de Solicitação de Viagem.</p>
+</footer>
+
+</body>
+</html>
